@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* F(rame)L(ess) */
+.fl {
+  margin: 0;
+  padding: 0;
+}
+
+.sticky {
+  position: sticky;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+}
+h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
