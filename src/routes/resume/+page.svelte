@@ -169,10 +169,18 @@
 <h1>web resume :]</h1>
 
 <h2>contact info</h2>
-<div id="socials-icons"></div>
+<div id="socials-icons" class="row">
+  <a href="https://www.linkedin.com/in/mclyssali/" target="_blank"><img alt="linkedin"/></a>
+  <a href="https://github.com/maozblan" target="_blank"><img alt="github"/></a>
+  <a href="https://maozblan.itch.io/" target="_blank"><img alt="itch.io"/></a>
+</div>
 
 <h2>education</h2>
 {@render textBlock(resume.education)}
+
+<h2>experience</h2>
+{@render textBlock(resume.ex_ugta)}
+{@render textBlock(resume.ex_nasa)}
 
 <h2>skills</h2>
 <div class="row" style="justify-content: space-around;">
@@ -189,10 +197,6 @@
 {@render textBlock(resume.proj_LoS)}
 {@render textBlock(resume.proj_sNm)}
 {@render textBlock(resume.proj_DC)}
-
-<h2>experience</h2>
-{@render textBlock(resume.ex_ugta)}
-{@render textBlock(resume.ex_nasa)}
 
 <style>
   #socials-icons {

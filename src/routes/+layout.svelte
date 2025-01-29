@@ -1,19 +1,9 @@
 <script>
-  import { img } from '$lib/img';
   import "@fontsource/anton";
   import "@fontsource/lato";
 
   let { children } = $props();
 </script>
-
-<div style={`
-  @font-face {
-    font-family: 'Anton';
-  }
-  ul {
-    list-style-image: url(${img.tringle_list});
-  }
-`}></div>
 
 <div id="everything-bagel" class="fl col">
   <div class="sticky">
@@ -47,7 +37,7 @@
   }
 
   #everything-bagel {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
   }
 

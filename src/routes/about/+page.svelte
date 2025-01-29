@@ -30,10 +30,6 @@
 </div>
 
 <style>
-  #about-me {
-    margin-top: 2rem;
-  }
-
   #silly-things {
     display: none;
   }
