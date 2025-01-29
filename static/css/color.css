@@ -1,0 +1,9 @@
+:root {
+  --text: #ddd;
+  --bg: #111;
+  --ac: #FF383B;
+  /* --ac: #D6383B; for light mode*/
+  /* --ac: #5a0; nice green */
+  /* --ac1: #89ce00; */
+  /* --ac2: #5ba300; */
+}
