@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/state";
   import "@fontsource/anton";
   import "@fontsource/lato";
 
@@ -15,10 +16,10 @@
 
 <div id="everything-bagel" class="fl col">
   <nav class="row">
-    <a href="/" onclick={(e) => swapSelectedNav(e)} data-cur="y">home</a>
-    <a href="/about" onclick={(e) => swapSelectedNav(e)}>about</a>
-    <a href="/portfolio" onclick={(e) => swapSelectedNav(e)}>portfolio</a>
-    <a href="/resume" onclick={(e) => swapSelectedNav(e)}>resume</a>
+    <a href="/" class:active="{page.url.pathname === '/'}">home</a>
+    <a href="/about" class:active="{page.url.pathname === '/about'}">about</a>
+    <a href="/portfolio" class:active="{page.url.pathname === '/portfolio'}">portfolio</a>
+    <a href="/resume" class:active="{page.url.pathname === '/resume'}">resume</a>
   </nav>
 
   <main class="col">
@@ -65,7 +66,7 @@
   nav a:hover {
     padding-top: 2.4rem;
   }
-  nav a[data-cur="y"] {
+  nav a.active {
     color: var(--text);
     border-bottom: var(--text) 1px solid;
   }

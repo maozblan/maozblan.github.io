@@ -12,9 +12,7 @@
       {/if}
       <h3 class="sub2">{info.sub2}</h3>
     </div>
-    <ul
-      class={info.list ? "" : "not-list"}
-    >
+    <ul class={info.list ? "" : "not-list"}>
       {#each info.text as item}
         <li>{item}</li>
       {/each}
@@ -99,9 +97,12 @@
   #socials-icons img {
     width: 3em;
     height: 3em;
+    /* change color to #FF383B */
+    filter: invert(41%) sepia(19%) saturate(4497%) hue-rotate(327deg)
+      brightness(95%) contrast(127%);
     /* change color to #ddd */
-    filter: invert(99%) sepia(0%) saturate(4253%) hue-rotate(164deg)
-      brightness(121%) contrast(73%);
+    /* filter: invert(99%) sepia(0%) saturate(4253%) hue-rotate(164deg)
+      brightness(121%) contrast(73%); */
   }
 
   h2 {
