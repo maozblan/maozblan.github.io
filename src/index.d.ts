@@ -5,3 +5,10 @@ interface ResumeBlock {
   text: string[];
   list: boolean;
 }
+
+interface Project {
+  title: string;
+  year: number;
+  icon: string;
+  tags: string[];
+}

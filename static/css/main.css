@@ -29,3 +29,10 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
+
+/* portfolio page */
+.fishfolio-tags div {
+  margin-right: 1em;
+  padding: 0.3em 0.5em;
+  border: var(--text) 1px solid;
+}
