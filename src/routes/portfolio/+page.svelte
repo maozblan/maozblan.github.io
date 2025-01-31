@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { portfolio } from "./portfolio";
 </script>
 

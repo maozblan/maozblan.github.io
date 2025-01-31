@@ -11,7 +11,7 @@
 
 <nav class="row">
   <a href="/portfolio">{`<< return`}</a>
-  <!-- <a href="/portfolio/{next}" style="margin-left: auto;">{`another >>`}</a> -->
+  <a href="/portfolio/{next}" style="margin-left: auto;">{`another >>`}</a>
 </nav>
 
 <br />
