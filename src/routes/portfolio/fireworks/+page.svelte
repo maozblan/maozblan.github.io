@@ -34,7 +34,7 @@
 
 <style>
   #firework-display {
-    border: var(--text) 1px solid;
+    border: var(--ac) 1px solid;
     padding: 1em;
     width: fit-content;
     height: fit-content;

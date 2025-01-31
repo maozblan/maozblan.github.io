@@ -4,29 +4,26 @@
   import "@fontsource/lato";
 
   let { children } = $props();
-
-  function swapSelectedNav(e: Event) {
-    document.querySelectorAll("nav a[data-cur='y']").forEach((el) => {
-      el.setAttribute("data-cur", "n");
-    });
-    const a = e.target as HTMLAnchorElement;
-    a.setAttribute("data-cur", "y");
-  }
 </script>
 
 <div id="everything-bagel" class="fl col">
   <nav class="row">
     <!-- <a href="/" class:active="{page.url.pathname === '/'}">home</a> -->
-    <a href="/about" class:active="{page.url.pathname === '/about'}">about</a>
-    <a href="/portfolio" class:active="{page.url.pathname === '/portfolio'}">portfolio</a>
-    <a href="/resume" class:active="{page.url.pathname === '/resume'}">resume</a>
+    <a href="/about" class:active={page.url.pathname === "/about"}>about</a>
+    <a href="/portfolio" class:active={page.url.pathname === "/portfolio"}
+      >portfolio</a
+    >
+    <a href="/resume" class:active={page.url.pathname === "/resume"}>resume</a>
   </nav>
 
   <main class="col">
     {@render children()}
   </main>
 
-  <div id="foot">portfolio by maozblan; last updated 2025 jan</div>
+  <div id="foot">
+    <p>portfolio by maozblan; last updated 2025 jan</p>
+    <p id="secret">happiness is inevitable :]</p>
+  </div>
 </div>
 
 <style>
@@ -50,34 +47,45 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-  }
-  nav a {
-    color: var(--ac);
-    background-color: var(--bg);
-    border-bottom: var(--ac) 1px solid;
-    height: 100%;
-    flex-grow: 1;
-    font-family: "Anton", sans-serif;
-    font-stretch: expanded;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    transition: padding-top 0.2s;
-  }
-  nav a:hover, nav a:active {
-    padding-top: 2.4rem;
-    text-decoration: none;
-  }
-  nav a.active {
-    color: var(--text);
-    border-bottom: var(--text) 1px solid;
+    user-select: none;
+    a {
+      color: var(--ac);
+      background-color: var(--bg);
+      border-bottom: var(--ac) 1px solid;
+      height: 100%;
+      flex-grow: 1;
+      font-family: "Anton", sans-serif;
+      font-stretch: expanded;
+      text-align: center;
+      letter-spacing: 0.2rem;
+      transition: padding-top 0.2s;
+      &:hover,
+      &:active {
+        padding-top: 2.4rem;
+        text-decoration: none;
+      }
+      &.active {
+        color: var(--text);
+        border-bottom: var(--text) 1px solid;
+      }
+    }
   }
   #foot {
     text-align: center;
     border-top: var(--ac) 1px solid;
     color: var(--ac);
-    font-family: "Anton", sans-serif;
-    font-stretch: expanded;
-    letter-spacing: 0.2rem;
+    p {
+      font-family: "Anton", sans-serif;
+      font-stretch: expanded;
+      letter-spacing: 0.2rem;
+    }
+    #secret {
+      font-size: 0;
+      transition: font-size 3.0s;
+    }
+    &:hover #secret {
+      font-size: 1rem;
+    }
   }
   #foot,
   nav a {

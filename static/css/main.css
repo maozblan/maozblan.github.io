@@ -21,6 +21,7 @@
 * {
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* user-select: none; feels wrong */
 }
 
 a {
@@ -36,19 +37,24 @@ h2, h3, h4, h5, h6 {
 
 /* portfolio page */
 .fishfolio-tags div, .fishfolio-links > * {
+  margin-bottom: 1em;
   margin-right: 1em;
   padding: 0.3em 0.5em;
   border: var(--text) 1px solid;
+}
+
+.fishfolio .row {
+  flex-wrap: wrap;
 }
 
 .fishfolio-links > * {
   color: var(--ac);
   border: var(--ac) 1px solid;
   transition: border-color 0.2s;
-}
-.fishfolio-links > *:hover, .fishfolio-links > *:active {
-  text-decoration: none;
-  border-color: transparent;
+  &:hover, &:active {
+    text-decoration: none;
+    border-color: transparent;
+  }
 }
 
 .fishfolio br {

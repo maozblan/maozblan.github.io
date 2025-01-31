@@ -12,6 +12,7 @@ import los3 from "$lib/assets/linesOfSleight3.png";
 import fw_icon from "$lib/assets/fireworkIcon.gif";
 import cftg_icon from "$lib/assets/coffeeForTheGoneIcon.png";
 import cftg1 from "$lib/assets/coffeeForTheGone1.png";
+import scara_icon from "$lib/assets/scaraIcon.png";
 import scaraConcept from "$lib/assets/scaramucciaConcept.pdf";
 
 export const img = {
@@ -29,5 +30,6 @@ export const img = {
   fw_icon,
   cftg_icon,
   cftg1,
+  scara_icon,
   scaraConcept,
 };

@@ -20,18 +20,28 @@
 {#if page.url.pathname === "/portfolio"}
   <h1>porfolio :)</h1>
 
-  <div id="portfolio-pieces">
-    {#each Object.keys(portfolio) as item}
-      <div class="block">
-        <a
-          href="/portfolio/{item}"
-          onclick={() => {
-            current = item;
-            ind = Object.keys(portfolio).indexOf(item);
-          }}>{portfolio[item].title}</a
-        >
-      </div>
-    {/each}
+  <div id="fishfolio-pieces" class="row">
+    <div class="row">
+      {#each Object.keys(portfolio) as item}
+        <div class="block">
+          <a
+            class="col"
+            href="/portfolio/{item}"
+            onclick={() => {
+              current = item;
+              ind = Object.keys(portfolio).indexOf(item);
+            }}
+          >
+            <img
+              src={portfolio[item].icon}
+              alt={`${portfolio[item].title} icon`}
+            />
+          </a>
+          <h3>{portfolio[item].title}</h3>
+          <p>{portfolio[item].type}</p>
+        </div>
+      {/each}
+    </div>
   </div>
 {:else}
   <nav class="row">
@@ -66,3 +76,47 @@
     {@render children()}
   </div>
 {/if}
+
+<style>
+  #fishfolio-pieces {
+    justify-content: space-around;
+    & > div {
+      flex-wrap: wrap;
+    }
+    .block {
+      text-align: center;
+      margin: 1rem;
+      width: fit-content;
+      height: fit-content;
+    }
+    img {
+      width: 10rem;
+      height: auto;
+      align-self: center;
+      transition:
+        width 0.2s,
+        height 0.2s;
+    }
+    a {
+      padding: 1rem;
+      border: var(--ac) 1px solid;
+      transition:
+        border-color 0.2s,
+        padding 0.2s;
+    }
+    a:hover {
+      padding: 0;
+      border-color: transparent;
+      img {
+        width: 12rem;
+        height: auto;
+      }
+    }
+    p {
+      margin-top: 0;
+    }
+    h3 {
+      margin-bottom: 0.3rem;
+    }
+  }
+</style>
