@@ -63,8 +63,9 @@
     letter-spacing: 0.2rem;
     transition: padding-top 0.2s;
   }
-  nav a:hover {
+  nav a:hover, nav a:active {
     padding-top: 2.4rem;
+    text-decoration: none;
   }
   nav a.active {
     color: var(--text);

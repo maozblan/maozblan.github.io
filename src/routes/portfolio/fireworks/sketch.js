@@ -2,6 +2,7 @@
 // copied from https://github.com/maozblan/cmpm169/blob/master/experiment3/js/fireworks.js
 
 let boops = [];
+let counter = 0;
 let white = [0, 0, 100]; // white in HSL
 
 // pad the screen so the fireworks don't appear too close to the edges
@@ -19,10 +20,13 @@ export const sketch = (p5) => {
 
   p5.draw = () => {
     // fade out the previous drawings
-    p5.background(0, 0.11); // alpha suggestion 0.05 <= a <= 0.25
-    for (let i = 0; i < boops.length; ++i) {
-      if (boops[i].draw()) {
-        boops.splice(i, 1);
+    counter++;
+    if (counter % 2 === 0 ) {
+      p5.background(0, 0.11); // alpha suggestion 0.05 <= a <= 0.25
+      for (let i = 0; i < boops.length; ++i) {
+        if (boops[i].draw()) {
+          boops.splice(i, 1);
+        }
       }
     }
     // if (p5.random(0, 1) > 0.97) {
@@ -34,8 +38,10 @@ export const sketch = (p5) => {
   };
 
   p5.mousePressed = () => {
-    const color = [p5.random(0, 255), p5.random(70, 100), p5.random(50, 70)];
-    boops.push(new Firework(p5.mouseX, p5.mouseY, color, p5));
+    if ((0 < p5.mouseX && p5.mouseX < p5.width) && (0 < p5.mouseY && p5.mouseY < p5.height)) {
+      const color = [p5.random(0, 255), p5.random(70, 100), p5.random(50, 70)];
+      boops.push(new Firework(p5.mouseX, p5.mouseY, color, p5));
+    }
   };
 };
 

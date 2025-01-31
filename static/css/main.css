@@ -23,6 +23,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: var(--ac);
+}
+
 h1 {
   font-family: "Anton", sans-serif;
 }
@@ -31,8 +35,22 @@ h2, h3, h4, h5, h6 {
 }
 
 /* portfolio page */
-.fishfolio-tags div {
+.fishfolio-tags div, .fishfolio-links > * {
   margin-right: 1em;
   padding: 0.3em 0.5em;
   border: var(--text) 1px solid;
+}
+
+.fishfolio-links > * {
+  color: var(--ac);
+  border: var(--ac) 1px solid;
+  transition: border-color 0.2s;
+}
+.fishfolio-links > *:hover, .fishfolio-links > *:active {
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.fishfolio br {
+  height: 1em;
 }
