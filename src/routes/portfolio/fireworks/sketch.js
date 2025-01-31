@@ -3,10 +3,6 @@
 
 let boops = [];
 let counter = 0;
-let white = [0, 0, 100]; // white in HSL
-
-// pad the screen so the fireworks don't appear too close to the edges
-let padding = 10;
 
 export const sketch = (p5) => {
   p5.setup = () => {
