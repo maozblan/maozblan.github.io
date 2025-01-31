@@ -6,8 +6,8 @@
 <br />
 
 <p>
-  you are cat. you are shadow cat. there are bullets. there are spikes. try to
-  survive. that is all.
+  you are cat. you are shadow cat. there are bullets. there are spikes. do not
+  let either cat die. that is all.
 </p>
 
 <p>

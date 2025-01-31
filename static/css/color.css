@@ -7,3 +7,11 @@
   /* --ac1: #89ce00; */
   /* --ac2: #5ba300; */
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #333;
+    --bg: #fefefe;
+    --ac: #DD383B;
+  }
+}

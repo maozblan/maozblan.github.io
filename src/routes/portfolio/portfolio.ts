@@ -1,5 +1,3 @@
-import {type Writable, writable} from 'svelte/store';
-
 export const portfolio: { [key: string]: Project} = {
   fireworks: {
     title: "l-system fireworks",
