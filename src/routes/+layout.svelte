@@ -2,9 +2,16 @@
   import { page } from "$app/state";
   import "@fontsource/anton";
   import "@fontsource/lato";
+  import icon32 from "$lib/favicon-32x32.png";
+  import icon16 from "$lib/favicon-16x16.png";
 
   let { children } = $props();
 </script>
+
+<svelte:head>
+  <link rel="icon" type="image/png" sizes="32x32" href={icon32} />
+  <link rel="icon" type="image/png" sizes="16x16" href={icon16} />
+</svelte:head>
 
 <div id="everything-bagel" class="fl col">
   <nav class="row">
@@ -81,7 +88,7 @@
     }
     #secret {
       font-size: 0;
-      transition: font-size 3.0s;
+      transition: font-size 3s;
     }
     &:hover #secret {
       font-size: 1rem;
