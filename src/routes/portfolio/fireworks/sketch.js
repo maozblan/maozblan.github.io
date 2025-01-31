@@ -15,22 +15,17 @@ export const sketch = (p5) => {
   };
 
   p5.draw = () => {
-    // fade out the previous drawings
     counter++;
+    // fade out the previous drawings
+    p5.background(0, 0.055); // alpha suggestion 0.05 <= a <= 0.25
+    // slow down
     if (counter % 2 === 0 ) {
-      p5.background(0, 0.11); // alpha suggestion 0.05 <= a <= 0.25
       for (let i = 0; i < boops.length; ++i) {
         if (boops[i].draw()) {
           boops.splice(i, 1);
         }
       }
     }
-    // if (p5.random(0, 1) > 0.97) {
-    //   const color = [p5.random(0, 255), p5.random(70, 100), p5.random(50, 70)];
-    //   let x = p5.random(p5.width / padding, p5.width - p5.width / padding);
-    //   let y = p5.random(p5.height / padding, p5.height - p5.height / padding);
-    //   boops.push(new Firework(x, y, color, p5));
-    // }
   };
 
   p5.mousePressed = () => {

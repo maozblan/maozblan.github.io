@@ -54,3 +54,11 @@ h2, h3, h4, h5, h6 {
 .fishfolio br {
   height: 1em;
 }
+
+.fishfolio .screenshot img, .fishfolio img.screenshot {
+  width: 90%;
+  height: auto;
+  padding: 1em;
+  border: var(--text) 1px solid;
+  align-self: center;
+}

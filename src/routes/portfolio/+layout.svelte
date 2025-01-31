@@ -47,6 +47,7 @@
     <p>{portfolio[current].tagline}</p>
     <div class="fishfolio-tags row">
       <div>{portfolio[current].year}</div>
+      <div>{portfolio[current].type}</div>
       {#each portfolio[current].tags as tag}
         <div>{tag}</div>
       {/each}

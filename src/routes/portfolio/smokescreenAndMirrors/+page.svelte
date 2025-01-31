@@ -1,7 +1,11 @@
 <script lang="ts">
+  import { img } from "$lib/img";
 </script>
 
-<!-- insert screenshoots -->
+<div class="pewpew screenshot col">
+  <img src={img.sam2} alt="in game" />
+  <img src={img.sam1} alt="tutorial" />
+</div>
 
 <br />
 
@@ -18,3 +22,17 @@
 </p>
 
 <br />
+
+<style>
+  .pewpew img {
+    width: 60%;
+  }
+
+  .pewpew img:last-child {
+    margin-top: 1em;
+    align-self: flex-end;
+  }
+  .pewpew img:first-child {
+    align-self: flex-start;
+  }
+</style>

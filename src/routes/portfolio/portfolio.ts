@@ -3,7 +3,8 @@ export const portfolio: { [key: string]: Project} = {
     title: "l-system fireworks",
     year: 2025,
     icon: "",
-    tags: ["art", "p5", "javascript"],
+    type: "art",
+    tags: ["p5", "javascript"],
     tagline: "something small, something silly",
     links: [
       {
@@ -20,7 +21,8 @@ export const portfolio: { [key: string]: Project} = {
     title: "scaramuccia",
     year: 2025,
     icon: "try, but the screen cannot save you",
-    tags: ["art", "desktop"],
+    type: "art",
+    tags: ["desktop"],
     tagline: "try, but the screen cannot save you",
     links: [
       {
@@ -33,7 +35,8 @@ export const portfolio: { [key: string]: Project} = {
     title: "coffee for the gone",
     year: 2024,
     icon: "it all comes down to the draw",
-    tags: ["game", "Typescript", "HTML5"],
+    type: "game",
+    tags: ["typescript", "html5"],
     tagline: "why don't we chill over a cup of otherworldly coffee",
     links: [
       {
@@ -50,7 +53,8 @@ export const portfolio: { [key: string]: Project} = {
     title: "lines of sleight",
     year: 2024,
     icon: "it all comes down to the draw",
-    tags: ["game", "unity3D", "c#", "ui"],
+    type: "game",
+    tags: ["unity3D", "c#", "ui"],
     tagline: "it all comes down to the draw",
     links: [
       {
@@ -67,7 +71,8 @@ export const portfolio: { [key: string]: Project} = {
     title: "smokescreen & mirrors",
     year: 2024,
     icon: "",
-    tags: ["game", "javascript", "phaser"],
+    type: "game",
+    tags: ["javascript", "phaser"],
     tagline: "meow meow meow, pew pew pew",
     links: [
       {

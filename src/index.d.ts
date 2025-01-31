@@ -10,6 +10,7 @@ interface Project {
   title: string;
   year: number;
   icon: string;
+  type: "art" | "game";
   tags: string[];
   tagline: string;
   links: Link[];

@@ -1,7 +1,10 @@
 <script lang="ts">
+  import { img } from "$lib/img";
 </script>
 
-<!-- insert screenshots -->
+<div class="screenshot col">
+  <img src={img.cftg1} alt="game page" />
+</div>
 
 <br />
 

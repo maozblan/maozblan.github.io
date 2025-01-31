@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { img } from "$lib/img";
 </script>
 
 <!-- embed video -->
@@ -18,11 +19,31 @@
   class at my university. this is what we collectively made with the given theme
   "dexterity domain," using the unity game engine. on the team, i was in charge
   of the user interface, incorporating all interface implementation and
-  interface related art assets.
+  illustrating all interface related art assets (along with key art).
+</p>
+
+<p>
+  with the art split between two artists, we drew inspiration from the other to
+  keep the themes and colors consistent. eventhough we both had very different
+  art styles, splitting the art by where the art appeared (interface vs game
+  assets) allowed both styles to fit together quite nicely. favorite art pieces
+  were definitely the cards; favorite design was the tokens :D
 </p>
 
 <br />
 
 <!-- talk about personal contributions with screenshots -->
 
+<div class="screenshot col">
+  <img src={img.los2} alt="cover art" />
+  <img src={img.los1} alt="boss fight" />
+  <img src={img.los3} alt="deck building" />
+</div>
+
 <br />
+
+<style>
+  .screenshot img:not(:first-child) {
+    margin-top: 1em;
+  }
+</style>
