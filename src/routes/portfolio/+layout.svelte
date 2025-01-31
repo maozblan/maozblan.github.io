@@ -82,6 +82,7 @@
     justify-content: space-around;
     & > div {
       flex-wrap: wrap;
+      justify-content: space-around;
     }
     .block {
       text-align: center;
