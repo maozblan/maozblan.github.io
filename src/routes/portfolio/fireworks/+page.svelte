@@ -11,7 +11,7 @@
 
 <nav class="row">
   <a href="/portfolio">{`<< return`}</a>
-  <a href="/portfolio/{next}" style="margin-left: auto;">{`another >>`}</a>
+  <!-- <a href="/portfolio/{next}" style="margin-left: auto;">{`another >>`}</a> -->
 </nav>
 
 <br />
@@ -30,10 +30,10 @@
   <br />
 
   <div class="fishfolio-links row">
-    <a
+    <!-- <a
       href="https://maozblan.github.io/cmpm169/experiment3/index.html"
       target="_blank">project submission page</a
-    >
+    > -->
     <a
       href="https://github.com/maozblan/cmpm169/experiment3/index.html"
       target="_blank">source code</a
