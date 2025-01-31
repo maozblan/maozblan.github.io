@@ -1,6 +1,6 @@
 <script lang="ts">
   import { portfolio } from "../portfolio";
-  const item = "smokescreenAndMirros";
+  const item = "smokescreenAndMirrors";
 </script>
 
 <div class="fishfolio">

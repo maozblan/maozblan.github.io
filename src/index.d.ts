@@ -11,4 +11,11 @@ interface Project {
   year: number;
   icon: string;
   tags: string[];
+  tagline: string;
+  links: Link[];
+}
+
+interface Link {
+  href: string;
+  text: string;
 }
