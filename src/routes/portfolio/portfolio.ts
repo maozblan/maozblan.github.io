@@ -1,4 +1,6 @@
-export const portfolio: { [key: string]: Project} = {
+import { img } from "$lib/img";
+
+export const portfolio: { [key: string]: Project } = {
   fireworks: {
     title: "l-system fireworks",
     year: 2025,
@@ -28,6 +30,10 @@ export const portfolio: { [key: string]: Project} = {
       {
         href: "https://steamcommunity.com/sharedfiles/filedetails/?id=3403015347",
         text: "steam wallpaper engine entry",
+      },
+      {
+        href: img.scaraConcept,
+        text: "design concept pdf",
       },
     ],
   },
@@ -85,4 +91,4 @@ export const portfolio: { [key: string]: Project} = {
       },
     ],
   },
-}
+};
