@@ -1,7 +1,12 @@
 <script lang="ts">
+  import { vid } from "$lib/vid";
 </script>
 
-<!-- insert video -->
+<video preload="auto" autoplay={true} loop={true} muted>
+  <source src={vid.scaraDemo} type="video/mp4" />
+  <track kind="captions" />
+  your browser does not support the html video tag :(
+</video>
 
 <br />
 

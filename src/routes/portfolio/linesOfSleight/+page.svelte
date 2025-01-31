@@ -1,8 +1,13 @@
 <script lang="ts">
   import { img } from "$lib/img";
+  import { vid } from "$lib/vid";
 </script>
 
-<!-- embed video -->
+<video preload="auto" autoplay={true} loop={true} muted>
+  <source src={vid.losDemo} type="video/mp4" />
+  <track kind="captions" />
+  your browser does not support the html video tag :(
+</video>
 
 <br />
 
