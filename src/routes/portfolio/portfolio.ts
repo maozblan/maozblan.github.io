@@ -14,7 +14,7 @@ export const portfolio: { [key: string]: Project } = {
         text: "project submission page",
       },
       {
-        href: "https://github.com/maozblan/cmpm169/experiment3/index.html",
+        href: "https://github.com/maozblan/cmpm169/tree/master/experiment3/js",
         text: "source code",
       },
     ],
