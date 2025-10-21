@@ -1,17 +1,25 @@
 export const resume: { [key: string]: ResumeBlock } = {
-  education: {
+  bachelors: {
     title: "University of California: Santa Cruz",
-    sub2: "EXPECTED GRADUATION JUNE 2025",
+    sub2: "SEPT 2022 – JUNE 2025",
     text: [
       "B.S. in Computer Science: Game Design",
       "Minor in Computer Science",
     ],
     list: false,
   },
+  masters: {
+    title: "University of Southern California",
+    sub2: "EXPECTED GRADUATION MAY 2027",
+    text: [
+      "M.S. in Computer Science (Game Development)",
+    ],
+    list: false,
+  },
   ex_ugta: {
     title: "Undergraduate Tutor",
     sub1: "UCSC Baskin Engineering",
-    sub2: "SEPT 2023 – PRESENT",
+    sub2: "SEPT 2023 – JUNE 2025",
     text: [
       "Assisted in weekly tutoring sessions using Pandas and Scikit-learn for a class of 200 students",
       "Worked with co-workers on a JSON-based question bank that can be converted into LaTeX or HTML quizzes",

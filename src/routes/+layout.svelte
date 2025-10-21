@@ -28,7 +28,7 @@
   </main>
 
   <div id="foot">
-    <p>portfolio by maozblan; last updated 2025 jan</p>
+    <p>portfolio by maozblan; last updated 2025 sept</p>
     <p id="secret">happiness is inevitable :]</p>
   </div>
 </div>

@@ -67,7 +67,8 @@
 </div>
 
 <h2>education</h2>
-{@render textBlock(resume.education)}
+{@render textBlock(resume.masters)}
+{@render textBlock(resume.bachelors)}
 
 <h2>experience</h2>
 {@render textBlock(resume.ex_ugta)}
