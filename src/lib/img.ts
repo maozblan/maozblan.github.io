@@ -15,6 +15,8 @@ import cftg1 from "$lib/assets/coffeeForTheGone1.png";
 import scara_icon from "$lib/assets/scaraIcon.png";
 import scaraConcept from "$lib/assets/scaramucciaConcept.pdf";
 
+import irlFmish from "$lib/assets/irlfmish.jpg";
+
 export const img = {
   triangle_list,
   github_icon,
@@ -32,4 +34,6 @@ export const img = {
   cftg1,
   scara_icon,
   scaraConcept,
+
+  irlFmish,
 };

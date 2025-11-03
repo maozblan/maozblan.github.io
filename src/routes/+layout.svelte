@@ -15,12 +15,9 @@
 
 <div id="everything-bagel" class="fl col">
   <nav class="row">
-    <!-- <a href="/" class:active="{page.url.pathname === '/'}">home</a> -->
-    <a href="/about" class:active={page.url.pathname === "/about"}>about</a>
-    <a href="/portfolio" class:active={page.url.pathname === "/portfolio"}
-      >portfolio</a
-    >
-    <a href="/resume" class:active={page.url.pathname === "/resume"}>resume</a>
+    <a href="/" class:active={page.url.pathname === "/"}>home</a>
+    <a href="/games" class:active={page.url.pathname === "/games"}>games</a>
+    <a href="/art" class:active={page.url.pathname === "/art"}>art</a>
   </nav>
 
   <main class="col">
@@ -28,7 +25,7 @@
   </main>
 
   <div id="foot">
-    <p>portfolio by maozblan; last updated 2025 sept</p>
+    <p>portfolio by maozblan; last updated 2025 nov</p>
     <p id="secret">happiness is inevitable :]</p>
   </div>
 </div>

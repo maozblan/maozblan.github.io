@@ -1,12 +1,11 @@
 <script lang="ts">
   import { page } from "$app/state";
   import { portfolio } from "./portfolio";
-  import { get } from "svelte/store";
   let { children } = $props();
 
   // crop to get item key
   function crop(url: string): string | undefined {
-    const prefix = "/portfolio";
+    const prefix = "/games";
     if (url.startsWith(prefix)) {
       return url.slice(prefix.length + 1);
     }
@@ -17,7 +16,7 @@
   let ind = $state(-1);
 </script>
 
-{#if page.url.pathname === "/portfolio"}
+{#if page.url.pathname === "/games"}
   <h1>porfolio :)</h1>
 
   <div id="fishfolio-pieces" class="row">
@@ -26,7 +25,7 @@
         <div class="block">
           <a
             class="col"
-            href="/portfolio/{item}"
+            href="/games/{item}"
             onclick={() => {
               current = item;
               ind = Object.keys(portfolio).indexOf(item);
@@ -45,8 +44,8 @@
   </div>
 {:else}
   <nav class="row">
-    <a href="/portfolio">{`<< return`}</a>
-    <a href="/portfolio" style="margin-left: auto;">{`also return >>`}</a>
+    <a href="/games">{`<< return`}</a>
+    <a href="/games" style="margin-left: auto;">{`also return >>`}</a>
   </nav>
 
   <br />
@@ -78,46 +77,4 @@
 {/if}
 
 <style>
-  #fishfolio-pieces {
-    justify-content: space-around;
-    & > div {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .block {
-      text-align: center;
-      margin: 1rem;
-      width: fit-content;
-      height: fit-content;
-    }
-    img {
-      width: 10rem;
-      height: auto;
-      align-self: center;
-      transition:
-        width 0.2s,
-        height 0.2s;
-    }
-    a {
-      padding: 1rem;
-      border: var(--ac) 1px solid;
-      transition:
-        border-color 0.2s,
-        padding 0.2s;
-    }
-    a:hover {
-      padding: 0;
-      border-color: transparent;
-      img {
-        width: 12rem;
-        height: auto;
-      }
-    }
-    p {
-      margin-top: 0;
-    }
-    h3 {
-      margin-bottom: 0.3rem;
-    }
-  }
 </style>
