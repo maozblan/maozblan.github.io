@@ -16,8 +16,7 @@
 <div id="everything-bagel" class="fl col">
   <nav class="row">
     <a href="/" class:active={page.url.pathname === "/"}>home</a>
-    <a href="/games" class:active={page.url.pathname === "/games"}>games</a>
-    <a href="/art" class:active={page.url.pathname === "/art"}>art</a>
+    <a href="/portfolio" class:active={page.url.pathname === "/portfolio"}>portfolio</a>
   </nav>
 
   <main class="col">

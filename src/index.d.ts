@@ -1,19 +1,14 @@
-interface ResumeBlock {
-  title: string;
-  sub1?: string;
-  sub2: string;
-  text: string[];
-  list: boolean;
-}
-
 interface Project {
+  id: string; // navigation
   title: string;
-  year: number;
-  icon: string;
-  type: string;
+  date: string;
+  cover: string;
   tags: string[];
-  tagline: string;
-  links: Link[];
+  summary: string;
+  location: {  // for plotting on graph
+    technical: number;
+    creative: number;
+  }
 }
 
 interface Link {
