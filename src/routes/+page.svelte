@@ -2,7 +2,7 @@
   import { img } from "$lib/img";
 </script>
 
-<div>
+<div id="fishbout">
   <div class="row">
     <div>
       <h1>Hello!!</h1>
@@ -35,6 +35,12 @@
 </div>
 
 <style>
+  #fishbout {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #me {
     margin-left: 3rem;
 		border: 2px solid var(--ac);
