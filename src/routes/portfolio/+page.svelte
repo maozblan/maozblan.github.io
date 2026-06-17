@@ -4,7 +4,7 @@
   let selected: null | Project = $state(null);
 </script>
 
-<div class="row" id="project-graph">
+<div class="row">
   <div id="graph">
     <div class="x-axis axis">technical</div>
     <div class="y-axis axis">creative</div>
@@ -15,7 +15,7 @@
 				left: {(point.location.technical / maxPointValue) * 100}%;
 				bottom: {(point.location.creative / maxPointValue) * 100}%;
 				"
-        onclick={() => {
+        on:click={() => {
           selected = point;
         }}
       ></button>
@@ -39,19 +39,12 @@
 </div>
 
 <style>
-  #project-graph {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   #graph {
     position: relative;
     --s: 500px;
     --b: 5px;
     width: var(--s);
-    height: var(--s);
-    margin-right: 3rem;
+    aspect-ratio: 1/1;
 
     * {
       position: absolute;
@@ -92,12 +85,7 @@
   }
 
 	#quick-peek {
-    width: 600px;
-    
-    h1 {
-      margin-bottom: 0;
-    }
-
+		
 		img {
 			width: 50%;
 		}

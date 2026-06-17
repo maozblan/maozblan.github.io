@@ -21,9 +21,7 @@
 
   <main class="col">
     {@render children()}
-    <div id="scuff-padding"></div>
   </main>
-
 
   <div id="foot">
     <p>portfolio by maozblan; last updated 2025 nov</p>
@@ -35,12 +33,11 @@
   main {
     flex-grow: 1;
     width: 100%;
-    margin: 5rem 0;
-    padding: 1rem;
-  }
-
-  #scuff-padding {
+    max-width: 800px;
     margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
   }
 
   #everything-bagel {
@@ -48,15 +45,12 @@
     height: 100vh;
   }
 
-  nav, #foot {
+  nav {
     justify-content: space-around;
     position: fixed;
     width: 100%;
     z-index: 100;
     user-select: none;
-  }
-
-  nav {
     a {
       color: var(--ac);
       background-color: var(--bg);
@@ -83,14 +77,10 @@
     text-align: center;
     border-top: var(--ac) 1px solid;
     color: var(--ac);
-    background-color: var(--bg);
-    bottom: 0;
-
     p {
       font-family: "Anton", sans-serif;
       font-stretch: expanded;
       letter-spacing: 0.2rem;
-      margin: 0.2rem 0;
     }
     #secret {
       font-size: 0;
