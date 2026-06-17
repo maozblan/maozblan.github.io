@@ -1,4 +1,11 @@
 <script lang="ts">
+  import { portfolio } from "../portfolio";
+  const item = "fireworks";
+  const next =
+    Object.keys(portfolio)[
+      (Object.keys(portfolio).indexOf(item) + 1) % Object.keys(portfolio).length
+    ];
+
   import P5 from "p5-svelte";
   import { sketch } from "./sketch.js";
 </script>
