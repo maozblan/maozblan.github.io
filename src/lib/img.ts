@@ -16,6 +16,17 @@ import cftg1 from "$lib/assets/coffeeForTheGone1.png";
 import scara_icon from "$lib/assets/scaraIcon.png";
 import scaraConcept from "$lib/assets/scaramucciaConcept.pdf";
 import stitch_icon from "$lib/assets/stitchIcon.png";
+import stitch_dc_ingame from "$lib/assets/stitchlings_dustClotInGame.png";
+import stitch_dc_render from "$lib/assets/stitchlings_dustClot_render.png";
+import stitch_dc_turnaround from "$lib/assets/stitchlings_dustClot_turnaround_color.png";
+import stitch_achievement1 from "$lib/assets/stitchlingAchievements_nohit copy.png";
+import stitch_achievement2 from "$lib/assets/stitchlingAchievements_shredling2.png";
+import stitch_achievement3 from "$lib/assets/stitchlingAchievements_spped copy.png";
+import stitch_boat1 from "$lib/assets/stitchlings_boats1.png";
+import stitch_boat2 from "$lib/assets/stitchlings_boat3.png";
+import stitch_boat3 from "$lib/assets/stitchlings_boat4.png";
+import stitch_forestConcept1 from "$lib/assets/stitchlings_forestArrivalConcept1_text.png";
+import stitch_forestConcept2 from "$lib/assets/stitchlings_forestArrivalConcept3.png";
 import fishing_icon from "$lib/assets/fishingIcon.png";
 import fishing1 from "$lib/assets/fishing1.gif";
 import fishing2 from "$lib/assets/FiSHiNG_clickFish.gif";
@@ -46,6 +57,17 @@ export const img = {
   scara_icon,
   scaraConcept,
   stitch_icon,
+  stitch_dc_ingame,
+  stitch_dc_render,
+  stitch_dc_turnaround,
+  stitch_achievement1,
+  stitch_achievement2,
+  stitch_achievement3,
+  stitch_boat1,
+  stitch_boat2,
+  stitch_boat3,
+  stitch_forestConcept1,
+  stitch_forestConcept2,
   fishing_icon,
   fishing1,
   fishing2,

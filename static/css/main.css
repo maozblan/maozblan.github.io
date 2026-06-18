@@ -85,3 +85,14 @@ h2, h3, h4, h5, h6 {
   height: auto;
   padding: 1em;
 }
+
+.fishfolio button.jump {
+  color: var(--ac);
+  margin: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--ac);
+  border-radius: 0;
+  &:hover {
+    border-color: transparent;
+  }
+}

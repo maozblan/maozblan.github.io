@@ -11,7 +11,6 @@
   <track kind="captions" />
   your browser does not support the html video tag :(
 </video>
-<p class="caption">game trailer</p>
 
 <br />
 

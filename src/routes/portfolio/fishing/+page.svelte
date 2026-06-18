@@ -29,6 +29,18 @@
   got to define the whole game style, both in art and UI :D
 </p>
 
+<iframe
+  width="100%"
+  height="500"
+  src="https://www.youtube.com/embed/4aL9cus8Ojw?autoplay=1&mute=1&loop=1&playlist=4aL9cus8Ojw"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+<br />
+
 <a
   class="link"
   href="https://store.steampowered.com/app/4200560/Stitchlings/"
