@@ -36,18 +36,28 @@ h2, h3, h4, h5, h6 {
 }
 
 /* portfolio page */
-.fishfolio-tags div, .fishfolio-links > * {
+.fishfolio h1 {
+  margin-bottom: 0;
+}
+
+.fishfolio .caption {
+  text-align: center;
+}
+
+.fishfolio .link {
+  font-size: 1.5rem;
   margin-bottom: 1em;
   margin-right: 1em;
   padding: 0.3em 0.5em;
   border: var(--text) 1px solid;
+  align-self: center;
 }
 
 .fishfolio .row {
   flex-wrap: wrap;
 }
 
-.fishfolio-links > * {
+.fishfolio .link {
   color: var(--ac);
   border: var(--ac) 1px solid;
   transition: border-color 0.2s;
@@ -58,7 +68,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .fishfolio br {
-  height: 1em;
+  margin: 0.5em;
 }
 
 .fishfolio .screenshot img, .fishfolio img.screenshot {

@@ -1,13 +1,10 @@
 <script lang="ts">
-  import { portfolio } from "../portfolio";
-  const next =
-    Object.keys(portfolio)[
-      (Object.keys(portfolio).indexOf(item) + 1) % Object.keys(portfolio).length
-    ];
-
   import P5 from "p5-svelte";
   import { sketch } from "./sketch.js";
 </script>
+
+<h1>L-system fireworks</h1>
+<h3>javascript procedural art || 2025</h3>
 
 <div class="col firework">
   <p>click in the box to spawn firework</p>

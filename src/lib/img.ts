@@ -16,6 +16,13 @@ import scara_icon from "$lib/assets/scaraIcon.png";
 import scaraConcept from "$lib/assets/scaramucciaConcept.pdf";
 import stitch_icon from "$lib/assets/stitchIcon.png";
 import fishing_icon from "$lib/assets/fishingIcon.png";
+import fishing1 from "$lib/assets/fishing1.gif";
+import fishing2 from "$lib/assets/FiSHiNG_clickFish.gif";
+import fishing3 from "$lib/assets/FiSHiNG_getScored.gif";
+import fishing4 from "$lib/assets/FiSHiNG_mc.png";
+import fishing5 from "$lib/assets/FiSHiNG_catHeads2.png";
+import fishing6 from "$lib/assets/FiSHiNG_loss.png";
+import fishing7 from "$lib/assets/FiSHiNG_trophy.png";
 
 import irlFmish from "$lib/assets/irlfmish.jpg";
 
@@ -38,6 +45,13 @@ export const img = {
   scaraConcept,
   stitch_icon,
   fishing_icon,
+  fishing1,
+  fishing2,
+  fishing3,
+  fishing4,
+  fishing5,
+  fishing6,
+  fishing7,
 
   irlFmish,
 };

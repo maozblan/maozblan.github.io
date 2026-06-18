@@ -18,7 +18,7 @@ export const portfolio: { [key: string]: Project } = {
     tagline: "fishing poker...?",
   },
   fireworks: {
-    title: "l-system fireworks",
+    title: "L-system fireworks",
     year: 2025,
     icon: img.fw_icon,
     type: "procedural art",
