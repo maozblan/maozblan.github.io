@@ -14,6 +14,8 @@ import cftg_icon from "$lib/assets/coffeeForTheGoneIcon.png";
 import cftg1 from "$lib/assets/coffeeForTheGone1.png";
 import scara_icon from "$lib/assets/scaraIcon.png";
 import scaraConcept from "$lib/assets/scaramucciaConcept.pdf";
+import stitch_icon from "$lib/assets/stitchIcon.png";
+import fishing_icon from "$lib/assets/fishingIcon.png";
 
 import irlFmish from "$lib/assets/irlfmish.jpg";
 
@@ -34,6 +36,8 @@ export const img = {
   cftg1,
   scara_icon,
   scaraConcept,
+  stitch_icon,
+  fishing_icon,
 
   irlFmish,
 };

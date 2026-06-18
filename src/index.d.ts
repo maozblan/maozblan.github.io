@@ -13,7 +13,6 @@ interface Project {
   type: string;
   tags: string[];
   tagline: string;
-  links: Link[];
 }
 
 interface Link {

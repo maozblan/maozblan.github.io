@@ -4,6 +4,7 @@
   import "@fontsource/lato";
   import icon32 from "$lib/favicon-32x32.png";
   import icon16 from "$lib/favicon-16x16.png";
+  import { resolve } from "$app/paths";
 
   let { children } = $props();
 </script>
@@ -15,9 +16,8 @@
 
 <div id="everything-bagel" class="fl col">
   <nav class="row">
-    <a href="/" class:active={page.url.pathname === "/"}>home</a>
-    <a href="/games" class:active={page.url.pathname === "/games"}>games</a>
-    <a href="/art" class:active={page.url.pathname === "/art"}>art</a>
+    <a href={resolve("/")} class:active={page.url.pathname === "/"}>home</a>
+    <a href={resolve("/portfolio")} class:active={page.url.pathname === "/portfolio"}>portfolio</a>
   </nav>
 
   <main class="col">
