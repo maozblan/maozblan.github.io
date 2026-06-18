@@ -3,11 +3,25 @@
   import { vid } from "$lib/vid";
 </script>
 
+<h1>scaramuccia</h1>
+<h3>desktop wallpaper, digital art || 2025</h3>
+
 <video preload="auto" autoplay={true} loop={true} muted>
   <source src={vid.scaraDemo} type="video/mp4" />
   <track kind="captions" />
   your browser does not support the html video tag :(
 </video>
+<p class="caption">wallpaper demo</p>
+
+<br />
+
+<a
+  class="link"
+  href="https://steamcommunity.com/sharedfiles/filedetails/?id=3403015347"
+  target="_blank"
+>
+  download (steam wallpaper engine, windows)
+</a>
 
 <br />
 

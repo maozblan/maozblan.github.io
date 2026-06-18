@@ -3,7 +3,7 @@
 </script>
 
 <h1>FiSHiNG</h1>
-<h3>unity c# || 2026</h3>
+<h3>unity c#, art, ui, engineering || 2026</h3>
 
 <p>
   FiSHiNG is a single person point-n-click single player poker fishing game.
@@ -37,13 +37,13 @@
 
 <h2>Selected Art</h2>
 
-<img class="screenshot" src={img.fishing4} alt="bts cutscene gif" />
+<img class="screenshot" src={img.fishing4} alt="main character, title screen" />
 <br />
-<img class="screenshot" src={img.fishing5} alt="bts cutscene gif" />
+<img class="screenshot" src={img.fishing5} alt="cat heads for npcs + main character" />
 <br />
 <div class="art row">
-  <img class="screenshot" src={img.fishing6} alt="bts cutscene gif" />
-  <img class="screenshot" src={img.fishing7} alt="bts cutscene gif" />
+  <img class="screenshot" src={img.fishing6} alt="main character loss" />
+  <img class="screenshot" src={img.fishing7} alt="trophy!!" />
 </div>
 
 <style>

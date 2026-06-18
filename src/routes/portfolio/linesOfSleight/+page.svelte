@@ -3,11 +3,25 @@
   import { vid } from "$lib/vid";
 </script>
 
+<h1>Lines of Sleight</h1>
+<h3>unity c#, art, ui || 2024</h3>
+
 <video preload="auto" autoplay={true} loop={true} muted>
   <source src={vid.losDemo} type="video/mp4" />
   <track kind="captions" />
   your browser does not support the html video tag :(
 </video>
+<p class="caption">game trailer</p>
+
+<br />
+
+<a
+  class="link"
+  href="https://violets321.itch.io/line-of-sleight"
+  target="_blank"
+>
+  executable on itch (windows)
+</a>
 
 <br />
 

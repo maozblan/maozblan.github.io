@@ -5,6 +5,7 @@ import linkedin_icon from "$lib/assets/linkedin.png";
 import sam_icon from "$lib/assets/samIcon.png";
 import sam1 from "$lib/assets/sam1.png";
 import sam2 from "$lib/assets/sam2.png";
+import sam3 from "$lib/assets/sam3.gif";
 import los_icon from "$lib/assets/linesOfSleightIcon.png";
 import los1 from "$lib/assets/linesOfSleight1.png";
 import los2 from "$lib/assets/linesOfSleight2.png";
@@ -34,6 +35,7 @@ export const img = {
   sam_icon,
   sam1,
   sam2,
+  sam3,
   los_icon,
   los1,
   los2,

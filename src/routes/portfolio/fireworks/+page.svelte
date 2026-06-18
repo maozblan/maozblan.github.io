@@ -4,7 +4,7 @@
 </script>
 
 <h1>L-system fireworks</h1>
-<h3>javascript procedural art || 2025</h3>
+<h3>javascript procedural art, engineering || 2025</h3>
 
 <div class="col firework">
   <p>click in the box to spawn firework</p>

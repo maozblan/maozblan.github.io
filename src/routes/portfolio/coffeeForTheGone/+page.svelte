@@ -20,7 +20,7 @@
 
 <a
   class="link"
-  href="https://maozblan.github.io/smokescreen-and-mirrors/"
+  href="https://maozblan.github.io/cmpm-121-demo-1"
   target="blank">play on browser</a
 >
 

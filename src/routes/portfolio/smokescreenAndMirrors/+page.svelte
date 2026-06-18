@@ -2,17 +2,22 @@
   import { img } from "$lib/img";
 </script>
 
-<div class="pewpew screenshot col">
-  <img src={img.sam2} alt="in game" />
-  <img src={img.sam1} alt="tutorial" />
-</div>
+<h1>smokescreen & mirrors</h1>
+<h3>javascript phaser.js || 2024</h3>
 
+<img class="screenshot" src={img.sam3} alt="gameplay gif" />
 <br />
 
 <p>
   you are cat. you are mirror cat. there are bullets. there are spikes. do not
   let either cat die. that is all.
 </p>
+
+<a
+  class="link"
+  href="https://maozblan.github.io/smokescreen-and-mirrors/"
+  target="blank">play on browser</a
+>
 
 <p>
   smokescreen and mirrors is an endless runner created for my game development
@@ -22,6 +27,11 @@
 </p>
 
 <br />
+
+<div class="pewpew screenshot col">
+  <img src={img.sam2} alt="in game" />
+  <img src={img.sam1} alt="tutorial" />
+</div>
 
 <style>
   .pewpew img {

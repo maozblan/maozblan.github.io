@@ -11,9 +11,12 @@
 </p>
 
 <a
+  class="link"
   href="https://store.steampowered.com/app/4200560/Stitchlings/"
-  target="_blank">Play Stitchlings on Steam!</a
+  target="_blank"
 >
+  play on steam (mac & windows)
+</a>
 
 <p>
   This project was created on Unity for USC's Advanced Game Programming class.
@@ -33,5 +36,3 @@
   For the second semester, I was the game's UI Engineer working on the upper HUD
   and the fieldbook (this game's adventure log).
 </p>
-
-
