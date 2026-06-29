@@ -2,9 +2,15 @@
   import { img } from "$lib/img";
 
   function jumpTo(id: string): void {
-    document.getElementById(id)?.scrollIntoView({
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    const offset =
+      5 * parseFloat(getComputedStyle(document.documentElement).fontSize); // 5rem in px
+
+    window.scrollTo({
+      top: element.getBoundingClientRect().top + window.scrollY - offset,
       behavior: "smooth",
-      block: "start",
     });
   }
 </script>
@@ -19,14 +25,14 @@
 </p>
 
 <button
-	class="jump"
+  class="jump"
   onclick={() => {
     jumpTo("concept-art");
   }}
   >jump to art contributions
 </button>
 <button
-	class="jump"
+  class="jump"
   onclick={() => {
     jumpTo("ui");
   }}
@@ -58,6 +64,14 @@
 </p>
 
 <h2 id="concept-art">Concpet Art</h2>
+<p>
+  for art, my contributions revolved around both characters and items. i did the
+  concept to final turnaround for the level 1 final boss, the forest
+  introduction scene, the toy boat prop, and more. i also helped contribute to
+  the game's steam achievement icon collection.
+</p>
+<br />
+
 <div class="row achievements">
   <img src={img.stitch_achievement1} alt="stitchlings achivement icon" />
   <img src={img.stitch_achievement2} alt="stitchlings achivement icon" />
@@ -74,7 +88,7 @@
     <img src={img.stitch_dc_ingame} alt="dust clot ingame" />
   </div>
 </div>
-<p class="caption">stitchling level 1 boss concept + ingame screenshot</p>
+<p class="caption">stitchling level 1 boss final + ingame screenshot</p>
 
 <br />
 
@@ -83,7 +97,7 @@
   <img src={img.stitch_boat2} alt="boat concept color" />
   <img src={img.stitch_boat3} alt="boat breakdown" />
 </div>
-<p class="caption">boat (decor) concept and breakdown for 3d modeler</p>
+<p class="caption">boat (prop) concept and breakdown for 3d modeler</p>
 <br />
 
 <div class="col forest">
@@ -93,7 +107,29 @@
 <p class="caption">forest level entrance concept</p>
 
 <h2 id="ui">UI Engineering</h2>
-<p>under construction</p>
+<p>
+  for ui engineering, i spent a lot of time on the game's adventure log system,
+  which we call and designed to look like a fieldbook. i also implemented
+  animations for the player's health bar and stat buffs. then i worked on
+  incorporating and polishing various popups to remind players which keys to
+  use, including "revive", "interact", and "select player".
+</p>
+<br />
+
+<img src={img.stitch_hp} alt="player hp bar animations" />
+<p class="caption">player hp bar animations + pfp swapping</p>
+<br />
+
+<img src={img.stitch_fieldbook1} alt="stitchlings fieldbook gif" />
+<div class="row fieldbook">
+  <img src={img.stitch_fieldbook2} alt="stitchlings fieldbook screenshot" />
+  <img src={img.stitch_fieldbook3} alt="stitchlings fieldbook screenshot" />
+</div>
+<p class="caption">in-game adventure log (fieldbook)</p>
+<br />
+
+<img src={img.stitch_respawn} alt="player respawn popup" />
+<p class="caption">revive pop-up</p>
 
 <style>
   h2 {
@@ -117,6 +153,14 @@
       & > * {
         width: 49%;
       }
+    }
+  }
+
+  .fieldbook {
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    & > * {
+      width: 49%;
     }
   }
 </style>

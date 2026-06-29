@@ -27,6 +27,11 @@ import stitch_boat2 from "$lib/assets/stitchlings_boat3.png";
 import stitch_boat3 from "$lib/assets/stitchlings_boat4.png";
 import stitch_forestConcept1 from "$lib/assets/stitchlings_forestArrivalConcept1_text.png";
 import stitch_forestConcept2 from "$lib/assets/stitchlings_forestArrivalConcept3.png";
+import stitch_fieldbook1 from "$lib/assets/stitchlings_fieldbook.gif";
+import stitch_fieldbook2 from "$lib/assets/stitchlings_fieldbook1.png";
+import stitch_fieldbook3 from "$lib/assets/stitchlings_fieldbook2.png";
+import stitch_hp from "$lib/assets/stitchlings_playerHealth.gif";
+import stitch_respawn from "$lib/assets/stitchlings_respawn.gif";
 import fishing_icon from "$lib/assets/fishingIcon.png";
 import fishing1 from "$lib/assets/fishing1.gif";
 import fishing2 from "$lib/assets/FiSHiNG_clickFish.gif";
@@ -68,6 +73,11 @@ export const img = {
   stitch_boat3,
   stitch_forestConcept1,
   stitch_forestConcept2,
+  stitch_fieldbook1,
+  stitch_fieldbook2,
+  stitch_fieldbook3,
+  stitch_hp,
+  stitch_respawn,
   fishing_icon,
   fishing1,
   fishing2,

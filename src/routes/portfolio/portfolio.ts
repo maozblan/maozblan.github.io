@@ -30,7 +30,7 @@ export const portfolio: { [key: string]: Project } = {
     // ],
   },
   coffeeForTheGone: {
-    title: "coffee for the gone",
+    title: "Coffee for the Gone",
     icon: img.cftg_icon,
     type: "game",
     tags: ["typescript", "html5"],
@@ -46,7 +46,7 @@ export const portfolio: { [key: string]: Project } = {
     // ],
   },
   scaramuccia: {
-    title: "scaramuccia",
+    title: "Scaramuccia",
     icon: img.scara_icon,
     type: "desktop wallpaper",
     tags: ["design", "wallpaper"],
@@ -62,7 +62,7 @@ export const portfolio: { [key: string]: Project } = {
     // ],
   },
   linesOfSleight: {
-    title: "lines of sleight",
+    title: "Lines of Sleight",
     icon: img.los_icon,
     type: "game",
     tags: ["unity3D", "c#", "ui"],
